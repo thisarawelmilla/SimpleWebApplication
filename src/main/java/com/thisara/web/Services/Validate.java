@@ -1,7 +1,5 @@
 package com.thisara.web.Services;
-
 import org.xml.sax.SAXException;
-
 import javax.xml.XMLConstants;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
@@ -9,6 +7,7 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.IOException;
 import java.io.StringReader;
+
 
 public class Validate {
 
@@ -25,9 +24,7 @@ public class Validate {
                      "</xs:schema>";
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         try {
-
             Schema schema = schemaFactory.newSchema(new StreamSource(new StringReader(xsd)));
-
             Validator validator = schema.newValidator();
             validator.validate(new StreamSource(new StringReader(xml)));
             return true;
@@ -36,7 +33,5 @@ public class Validate {
         } catch (IOException e) {
             return false;
         }
-
-
     }
 }

@@ -1,5 +1,4 @@
 package com.thisara.web.configuration;
-
 import javax.ws.rs.core.Application;
 import javax.ws.rs.ApplicationPath;
 

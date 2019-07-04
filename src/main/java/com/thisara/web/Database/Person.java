@@ -1,5 +1,4 @@
 package com.thisara.web.Database;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
