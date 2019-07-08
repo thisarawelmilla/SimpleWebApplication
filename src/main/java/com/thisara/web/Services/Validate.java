@@ -10,7 +10,6 @@ import java.io.StringReader;
 
 
 public class Validate {
-
     public boolean valid(String xml) {
         String xsd = "<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n" +
                      "<xs:element name=\"test\">\n" +
