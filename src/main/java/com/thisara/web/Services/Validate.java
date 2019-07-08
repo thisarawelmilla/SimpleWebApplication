@@ -27,9 +27,9 @@ public class Validate {
             Validator validator = schema.newValidator();
             validator.validate(new StreamSource(new StringReader(xml)));
             return true;
-        } catch (SAXException e) {
+        } catch (SAXException saxE) {
             return false;
-        } catch (IOException e) {
+        } catch (IOException ioE) {
             return false;
         }
     }
